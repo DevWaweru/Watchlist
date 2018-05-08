@@ -42,7 +42,7 @@ def process_results(movie_list):
     movie_results = []
 
     for movie_item in movie_list:
-        identity = movie_item.get('id')
+        id = movie_item.get('id')
         title = movie_item.get('original_title')
         overview = movie_item.get('overview')
         poster = movie_item.get('poster_path')
@@ -50,7 +50,7 @@ def process_results(movie_list):
         vote_count = movie_item.get('vote_count')
 
         if poster:
-            movie_object = Movie(identity,title,overview,poster,vote_average,vote_count)
+            movie_object = Movie(id,title,overview,poster,vote_average,vote_count)
             movie_results.append(movie_object)
 
     return movie_results
