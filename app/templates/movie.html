@@ -1,4 +1,16 @@
-<!-- {% extends 'base.html'%}
-{% block content %} -->
-    <h1>This is movie {{ id }}</h1>
-<!-- {% endblock %} -->
+{% extends 'base.html'%}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-6" style="background: url({{movie.poster}}) no-repeat center center">
+            <img src={{movie.poster}} alt="">
+        </div>
+        <div class="col-md-6 movie-details">
+            <h3>{{ movie.title }}</h3>
+            <p class="overview">{{movie.overview}}</p>
+            <p class="ratings"><b>{{movie.vote_average}} </b><i> {{movie.vote_count}} votes </i></p>
+            <p>{{movie.poster}}</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
