@@ -18,7 +18,7 @@ def get_movies(category):
 
     with urllib.request.urlopen(get_movies_url) as url:
         get_movies_data = url.read()
-        get_movies_response = json.loads(get_movies_data.decode('utf-8'))
+        get_movies_response = json.loads(get_movies_data)
         # print(get_movies_data)
 
         movie_results = None
