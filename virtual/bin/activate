@@ -40,7 +40,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/richard/Documents/moringa-school-projects/FullStack/Watchlist/virtual"
+VIRTUAL_ENV="/home/richi/Documents/moringa-school-projects/FullStack/Watchlist/virtual"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

@@ -1,4 +1,4 @@
-#!/home/richard/Documents/moringa-school-projects/FullStack/Watchlist/virtual/bin/python
+#!/home/richi/Documents/moringa-school-projects/FullStack/Watchlist/virtual/bin/python
 
 import sys
 import getopt
